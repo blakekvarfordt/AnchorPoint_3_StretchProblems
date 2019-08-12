@@ -18,4 +18,22 @@ var stringsArray = ["I", "Love", "DevMountain"]
 var blackDiamondDictionary = ["Mama" : "too cold", "Papa" : "too hot", "Baby" : "just right"]
 
 
+
+let multiplesOf3 = numbersArray.filter { $0 % 3 == 0
+    
+    }
+print(multiplesOf3)
+
+let largestNumber = multiplesOf3.reduce(0, { max($0, $1) })
+    print(largestNumber)
+
+
+let loveDevmountain = stringsArray.reduce("", {$0 + " " + $1})
+print(loveDevmountain)
+
+let dictionary = blackDiamondDictionary.reduce("", { $0 : $1 })
+    
+
+
+
 //: [Next](@next)
